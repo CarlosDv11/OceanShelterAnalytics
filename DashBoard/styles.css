@@ -14,38 +14,72 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 header {
-    background-image: url('../Assets/OceanShelter.jpg');
-    background-size: cover;  
-    background-position: center center;
+    background-color: #000;
+    background-image: url('../Assets/ocean.png');
+    background-size: 150px;
+    background-position: 5px 20px;
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 70px;
-    padding-left: 20px;
-    padding-right: 35px;
+    padding: 30px;
     border-bottom: 5px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;  
-}
-
-header .logo {
-    position: absolute;
-    top: 20px; 
-    left: 20px;  
-    width: 200; 
-    height: 400px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
     font-family: 'Pacifico', cursive;
-    font-size: 3.5rem;
+    font-size: 2rem;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-main {
+.profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown button:hover {
+    background-color: #0056b3;
+}
+
+.main {
     padding: 20px;
     text-align: center;
 }
