@@ -1,13 +1,12 @@
 {
-    "rewrites": [
-      {
-        "source": "/home",
-        "destination": "/DashBoard/home.html"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "../login/login.html"
-      }
-    ]
-  }
-  
+  "rewrites": [
+    {
+      "source": "/home",
+      "destination": "/DashBoard/home.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/Login/login.html"
+    }
+  ]
+}
